@@ -1,0 +1,9 @@
+main.pdf
+main.out
+main.log
+main.synctex.gz
+main.fls
+main.fdb_latexmk
+main.aux
+
+stfloats.*

@@ -1,0 +1,105 @@
+\documentclass[12pt,a4paper,twocolumn]{article}
+
+% ===== Paquetes básicos =====
+\usepackage[spanish]{babel}      
+\usepackage[utf8]{inputenc}      
+\usepackage[T1]{fontenc}         
+\usepackage{amsmath, amssymb}    
+\usepackage{graphicx}            
+\usepackage{float}               
+\usepackage{siunitx}             
+\usepackage{tikz}                
+\usepackage{circuitikz}
+\usepackage{caption}             
+\usepackage{geometry}
+\usepackage{stfloats}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{physics}
+\urlstyle{same}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\usepackage{tocloft}
+% Texto del índice normal, sin negritas en números
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+\DeclareSIUnit{\calorie}{cal}
+\sisetup{
+    output-decimal-marker = {,},
+    separate-uncertainty = true,  % Esto muestra ± en lugar de ()
+    uncertainty-separator = {\,\pm\,}
+}
+
+% ===== Estilo de captions =====
+\captionsetup[figure]{labelfont=bf}
+\captionsetup[table]{labelfont=bf, name=Tabla}
+
+% ===== Palabras clave =====
+\newcommand{\keywords}[1]{\vspace{2mm}\noindent\textbf{Palabras clave:} #1}
+
+% ===== Títulos de secciones =====
+\usepackage{sectsty}
+%\allsectionsfont{\centering\uppercase}
+\sectionfont{\centering\normalsize\uppercase}
+\subsectionfont{\centering\small\uppercase}
+\subsubsectionfont{\centering\small\itshape}
+\renewcommand{\thesection}{\Roman{section}}
+
+% ===== Datos del informe (centrado) =====
+\title{\textbf{\LARGE TODO}}
+\author{
+\large Francisco Utrera - Facundo Picco\\[2mm]
+\small \textit{Informe de Experimental II -- Instituto Balseiro} \\
+\small \textit{Universidad Nacional de Cuyo \& Comisión Nacional de Energía Atómica} \\
+\small \textit{Av. Bustillo 9500, c.p.8400 San Carlos de Bariloche, Río Negro, Argentina} \\
+\small \texttt{francisco.utrera@ib.edu.ar} \texttt{omar.daus@ib.edu.ar} %tu mail khalid
+}
+\date{\today}
+
+\begin{document}
+
+% ===== Portada =====
+\twocolumn[
+\begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+    TODO
+    \end{abstract}
+    \keywords{}
+    \vspace{1cm}
+\end{@twocolumnfalse}
+]
+
+
+% ===== Secciones =====
+
+\section{Introducción}
+\input{Secciones/Introduccion}
+
+\section{Método experimental}
+\input{Secciones/Metodo Experimental}
+
+\section{Resultados}
+\input{Secciones/Resultados}
+
+\section{Discusión}
+\input{Secciones/Discusion}
+
+\section{Conclusiones}
+\input{Secciones/Conclusiones}
+
+\section*{Referencias}
+\renewcommand{\refname}{}
+
+\bibliographystyle{ieeetr}
+\bibliography{sources.bib}
+
+\clearpage
+% ================== ANEXO: Propagación de errores ==================
+\appendix
+\input{Secciones/Anexo}
+
+\end{document}
