@@ -1,13 +1,36 @@
 Se midieron los patrones de difracción de la sal de mesa y la sal \textit{light}, así como también de las soluciones de cloruro de potasio y bromuro de potasio, de estas sales en estado puro y de una mezcla de ambas.
 
-poner aca la sal de mesa y sal light
+En primer lugar, se realizaron las mediciones de la sal de mesa y la sal \textit{light}, las cuales fueron molidas previamente para su análisis en el difractómetro. Se compararon los patrones de difracción obtenidos con el fin de identificar diferencias entre ambas sales. Se observó que la sal \textit{light} presentaba picos de intensidad en ángulos de difracción que no coincidían con los de la sal de mesa (NaCl), lo que sugería la presencia de otra fase. Al comparar este patrón con el del KCl puro, se comprobó que los picos adicionales de la sal \textit{light} correspondían a dicha sal. Por lo tanto, se concluye que la sal \textit{light} es una mezcla de NaCl y KCl, como se observa en la figura \ref{fig:sal_light}.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Imagenes/comparacion_sallight_nacl_kcl.png}
+    \caption{Comparación de los patrones de difracción de la sal de mesa (NaCl), la sal \textit{light} y el KCl puro. Se observa que la sal \textit{light} presenta picos adicionales que corresponden al KCl, indicando que es una mezcla de ambas sales.}
+    \label{fig:sal_light}
+\end{figure}
 
 En las mediciones de las soluciones de KCl y KBr, variando la fracción molar $X_{Br}$ en valores de 0, 0.2, 0.4, 0.6, 0.8 y 1, se observó un desplazamiento progresivo en los picos de intensidad. Inicialmente, los patrones presentan una mayor similitud con el KCl puro, evolucionando gradualmente hacia el perfil del KBr conforme aumenta la concentración de bromo. Este fenómeno se ilustra en la figura \ref{fig:zoom_picos}, donde se aprecia el desplazamiento de los picos de mayor intensidad para cada una de las soluciones analizadas.
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Imagenes/zoom_primeros_picos_soluciones.png}
+    \caption{Gráfica de los picos de mayor intensidad para cada una de las soluciones analizadas. Donde X representa la fracción molar de KBr en las distintas soluciones.}
+    \label{fig:zoom_picos}
+\end{figure}
+
+Luego, se graficaron los parámetros de red para las distintas soluciones, donde se puede observar una tendencia lineal en su variación con respecto a la fracción molar de KBr. Esto sugiere un comportamiento que obedece a lo enunciado por la ley de Vegard, como se evidencia en la figura \ref{fig:vegard}.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figuras/zoom_primeros_picos_soluciones.png}
-    \caption{Gráfica de los picos de mayor intensidad para cada una de las soluciones analizadas. Donde X representa la fracción molar de KBr en las distintas soluciones.}
-    \label{fig:zoom_picos}
+    \includegraphics[width=0.5\textwidth]{Imagenes/parametro_red_a_vs_x.png}
+    \caption{Evolución del parámetro de red $a$ en función de la fracción molar de KBr en las soluciones analizadas. Se muestra en línea punteada el comportamiento ideal dictado por la ley de Vegard, y en línea continua, el ajuste lineal correspondiente a las mediciones experimentales.}
+    \label{fig:vegard}
+\end{figure}
+
+En el caso en el que se realizo la mezcla de las sales KCl y KBr sin pasarlas a estado liquido, se observó que el patrón de difracción resultante presentaba picos correspondientes a ambas sales, sin un desplazamiento significativo en los mismos. Esto sugiere que las sales no se mezclaron a nivel atómico, sino que coexistieron como fases separadas, lo que se evidencia en la figura \ref{fig:mezcla}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Imagenes/comparacion_mezcla_kcl_kbr.png}
+    \caption{Comparación de los patrones de difracción de la mezcla de KCl y KBr con los patrones individuales. Se observa que los picos corresponden a ambas sales, indicando que no se mezclaron a nivel atómico.}
+    \label{fig:mezcla}
 \end{figure}
