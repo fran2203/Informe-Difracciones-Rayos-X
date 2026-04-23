@@ -1,3 +1,21 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{cristal_def}
+G.~Antonoff, ``Communication to the editor: On the definition of a crystal,''
+  {\em The Journal of Physical Chemistry}, vol.~48, no.~2, pp.~95--95, 1944.
+
+\bibitem{cullity}
+B.~Cullity, {\em Elements of X-ray Diffraction}.
+\newblock Addison-Wesley series in metallurgy and materials, Addison-Wesley
+  Publishing Company, 1978.
+
+\bibitem{ley_bragg}
+W.~H. Bragg and W.~L. Bragg, ``The reflection of x-rays by crystals,'' {\em
+  Proceedings of the Royal Society of London. Series A, Containing Papers of a
+  Mathematical and Physical Character}, vol.~88, pp.~428--438, 07 1913.
+
+\bibitem{Vegard1921}
+L.~Vegard, ``Die konstitution der mischkristalle und die raumfüllung der
+  atome,'' {\em Zeitschrift für Physik}, vol.~5, no.~1, pp.~17--26, 1921.
 
 \end{thebibliography}

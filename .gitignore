@@ -5,5 +5,7 @@ main.synctex.gz
 main.fls
 main.fdb_latexmk
 main.aux
+main.bbl
+main.blg
 
 stfloats.*
