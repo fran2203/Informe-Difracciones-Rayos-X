@@ -8,7 +8,7 @@ En primer lugar, se realizaron las mediciones de la sal de mesa y la sal \textit
     \label{fig:sal_light}
 \end{figure}
 
-En las mediciones de las soluciones de KCl y KBr, variando la fracción molar $X_{Br}$ en valores de 0, 0.2, 0.4, 0.6, 0.8 y 1, se observó un desplazamiento progresivo en los picos de intensidad. Inicialmente, los patrones presentan una mayor similitud con el KCl puro, evolucionando gradualmente hacia el perfil del KBr conforme aumenta la concentración de bromo. Este fenómeno se ilustra en la figura \ref{fig:zoom_picos}, donde se aprecia el desplazamiento de los picos de mayor intensidad para cada una de las soluciones analizadas.
+En las mediciones de las soluciones de KCl y KBr, variando la fracción molar $x \in \{0; 0,2; 0,4; 0,6; 0,8; 1\}$, se observó un desplazamiento progresivo en los picos de intensidad. Inicialmente, los patrones presentan una mayor similitud con el KCl puro y evolucionan gradualmente hacia el perfil del KBr conforme aumenta la concentración de bromo. Este fenómeno se ilustra en la figura \ref{fig:zoom_picos}, donde se aprecia el desplazamiento de los picos de mayor intensidad para cada una de las soluciones analizadas. Asimismo, se puede observar el crecimiento de un pico a medida que $x$ toma valores cercanos a 1; esto se debe a que el número atómico del bromo ($Z=35$) es mucho mayor que el del potasio ($Z=19$), lo que permite divisar el pico proveniente de los términos impares de la ecuación \ref{eq:Impares}. Esto no sucede con el cloro ($Z=17$), ya que su número atómico es similar al del potasio, provocando que la intensidad de dichos picos sea despreciable.
 
 \begin{figure}[htbp]
     \centering
@@ -21,8 +21,13 @@ Luego, se graficaron los parámetros de red para las distintas soluciones, donde
 
 \begin{figure}[htbp]
     \centering
+<<<<<<< HEAD
     \includegraphics[width=\columnwidth]{Imagenes/parametro_red_a_vs_x.png}
     \caption{Evolución del parámetro de red $a$ en función de la fracción molar de KBr en las soluciones analizadas. Se muestra en línea punteada el comportamiento ideal dictado por la ley de Vegard, y en línea continua, el ajuste lineal correspondiente a las mediciones experimentales.}
+=======
+    \includegraphics[width=0.5\textwidth]{Imagenes/parametro_red_a_vs_x.png}
+    \caption{Evolución del parámetro de red $a$ en función de la fracción molar de KBr en las soluciones analizadas. Se muestra en línea punteada el comportamiento ideal dictado por la ley de Vegard.}
+>>>>>>> 8f57ba07edc602027a5667520942625584a7557f
     \label{fig:vegard}
 \end{figure}
 
@@ -35,14 +40,28 @@ En el caso en el que se realizo la mezcla de las sales KCl y KBr sin pasarlas a 
     \label{fig:mezcla}
 \end{figure}
 
-Adicionalmente, se realizó una comparación entre los distintos parámetros de red obtenidos para las sustancias puras analizadas y el cloruro de litio (LiCl), utilizando mediciones proporcionadas por la UNSL. Los parámetros de red se calcularon a partir de los picos de difracción de cada una de las sustancias; en primer lugar, se obtuvo la distancia interplanar $d$ según la ecuación de Bragg \ref{eq: ley_bragg}, y luego se realizó un ajuste lineal de $d$ con respecto a los índices de Miller correspondientes a cada pico para obtener el parámetro de red $a$. En la figura \ref{fig:NaCl_a} se muestra un ejemplo de este procedimiento para el cloruro de sodio, el cual fue replicado para el resto de las sustancias. Los resultados obtenidos se resumen en la tabla \ref{tab:parametros_red}.
+Adicionalmente, se realizó una comparación entre los distintos parámetros de red obtenidos para las sustancias puras analizadas y el cloruro de litio (LiCl), utilizando mediciones proporcionadas por la UNSL. Los parámetros de red se calcularon a partir de los picos de difracción de cada una de las sustancias; en primer lugar, se obtuvo la distancia interplanar $d$ según la ecuación de Bragg \ref{eq: ley_bragg}, y luego se realizó un ajuste lineal de $d$ con respecto a los índices de Miller correspondientes a cada pico para obtener el parámetro de red $a$. En la figura \ref{fig:NaCl_a} se muestra la comparación de los distintos ajustes lineales. Los resultados obtenidos se resumen en la tabla \ref{tab:parametros_red}.
 
 \begin{figure}[htbp]
     \centering
     % Te cambié el espacio por un guión bajo. ¡Acordate de cambiarle el nombre al archivo original!
+<<<<<<< HEAD
     \includegraphics[width=\columnwidth]{Imagenes/NaCl ajuste_a.png}
     \caption{Ajuste lineal de la distancia interplanar $d$ en función de los índices de Miller para el cloruro de sodio.}
+=======
+    \includegraphics[width=0.5\textwidth]{Imagenes/ajuste_a_todas_sustancias.png}
+    \caption{Ajuste lineal de la distancia interplanar $d$ en función de los índices de Miller para las distintas sustancias puras.}
+>>>>>>> 8f57ba07edc602027a5667520942625584a7557f
     \label{fig:NaCl_a}
+\end{figure}
+
+Con los datos proporcionados por la tabla \ref{tab:parametros_red} se realizo un ajuste de estos parametros de red con respecto a la suma de los radios iónicos del catión y el anión de cada una de las sales sacados de tablas de radios ionicos de Shannon \cite{Shannon}, obteniendo un comportamiento lineal como es de esperar y una pendiente de $m = 1.88 \pm 0,06$ como se muestra en la figura \ref{fig:a_vs_radio_ionico}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{Imagenes/a_vs_suma_radios.png}
+    \caption{Ajuste lineal del parámetro de red $a$ en función de la suma de los radios iónicos del catión y el anión para las distintas sales puras analizadas.}
+    \label{fig:a_vs_radio_ionico}
 \end{figure}
 
 \begin{table}[htbp]
@@ -52,12 +71,20 @@ Adicionalmente, se realizó una comparación entre los distintos parámetros de 
     \begin{tabular}{|l|c|c|}
         \hline
         \textbf{F. química} & \textbf{Resultado (\AA)} & \textbf{Valor de ref. (\AA)} \\ \hline
-        NaCl & 5.65 & 5.640 \\ \hline
-        KCl  & 6.31 & 6.293 \\ \hline
-        KBr  & 6.62 & 6.600 \\ \hline
+        NaCl & $5.604 \pm 0.004$ & 5.620\\ \hline
+        KCl  & $6.264 \pm 0.005$ & 6.279\\ \hline
+        KBr  & $6.604 \pm 0.005$ & 6.585\\ \hline
+        LiCl & $5.144 \pm 0.003$ & 5.143\\ \hline
     \end{tabular}
 \end{table}
-
 Con el fin de analizar su morfología, se obtuvieron imágenes mediante microscopía electrónica de barrido (SEM) de los cristales provenientes de las distintas soluciones. En aquellos casos donde fue necesario acelerar la evaporación, se dificultó la observación de la formación cristalina, dado que la cinética del proceso afectó la calidad de la cristalización. 
 
-Para la muestra con $X_{Br}=0.4$, el análisis se realizó sobre el polvo empleado en las mediciones de difracción. Por el contrario, los cristales que presentaron una mejor definición fueron los de $X_{Br}=1$, obtenidos mediante evaporación a temperatura ambiente; este proceso más lento favoreció la formación de estructuras de mayor tamaño y mejor definidas. Todas las morfologías mencionadas pueden observarse en la Figura \ref{fig:SEM}.
+Para la muestra con $x = 0.4$, el análisis se realizó sobre el polvo empleado en las mediciones de difracción. Por el contrario, los cristales que presentaron una mejor definición fueron los de $x=1$, obtenidos mediante evaporación a temperatura ambiente; este proceso más lento favoreció la formación de estructuras de mayor tamaño y mejor definidas. Todas las morfologías mencionadas pueden observarse en la Figura \ref{fig:SEM}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Imagenes/Imagenes_Sem.png}
+    \caption{Imágenes obtenidas mediante microscopía electrónica de barrido (SEM) de los cristales provenientes de las distintas soluciones.La imagen A pertenece a $x=0$, la B a $x=1$, la C a $x=0.2$, la D a $x=0.4$, la E a $x=0.6$ y la F a $x=0.8$.}
+    \label{fig:SEM}
+\end{figure}
+
