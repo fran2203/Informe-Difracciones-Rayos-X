@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{iucr_crystal}
+{International Union of Crystallography}, ``Crystal -- online dictionary of
+  crystallography.'' \url{https://dictionary.iucr.org/Crystal}, s.f.
+\newblock Accedido: 24 de abril de 2026.
+
 \bibitem{cullity}
 B.~Cullity, {\em Elements of X-ray Diffraction}.
 \newblock Addison-Wesley series in metallurgy and materials, Addison-Wesley
